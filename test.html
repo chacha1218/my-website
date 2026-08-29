@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ベストバイ紹介☆</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#f7f3ee;
+    font-family:
+    "Hiragino Sans",
+    "Yu Gothic",
+    sans-serif;
+
+    color:#5b5147;
+}
+
+/* ===== TOPバナー ===== */
+
+.hero{
+    background:
+    linear-gradient(
+    rgba(255,255,255,0.3),
+    rgba(255,255,255,0.3)),
+    url("banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    height: 440px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+
+.hero-box{
+    background:rgba(255,255,255,0.8);
+
+    font-size: 26px;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    backdrop-filter:blur(3px);
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+    white-space:nowrap;
+}
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ===== 自己紹介 ===== */
+
+.profile{
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+    padding:70px 20px;
+}
+
+.profile img{
+    width: 400px;
+}
+
+.speech{
+    background:white;
+
+    max-width:420px;
+
+    padding:30px;
+
+    border-radius:30px;
+
+    line-height:2;
+
+    position:relative;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,0.08);
+}
+
+.speech::before{
+    content:"";
+
+    position:absolute;
+
+    left:-20px;
+    top:60px;
+
+    border-width:12px;
+
+    border-style:solid;
+
+    border-color:
+    transparent white transparent transparent;
+}
+
+/* ===== セクション ===== */
+
+.section{
+    width:90%;
+    max-width:1000px;
+
+    margin:auto;
+
+    padding-bottom:60px;
+}
+
+.section-title{
+    font-size:34px;
+
+    margin-bottom:30px;
+
+    border-left:8px solid #d8bfa9;
+
+    padding-left:18px;
+}
+
+/* ===== ランキングカード ===== */
+
+.card{
+    background:white;
+
+    border-radius:28px;
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:center;
+
+    padding:20px;
+
+    margin-bottom:28px;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,0.05);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:180px;
+
+    border-radius:20px;
+
+    object-fit:cover;
+}
+
+.card-text{
+    flex:1;
+    text-align:left;
+}
+
+.rank{
+    font-size:28px;
+
+    margin-bottom:12px;
+}
+
+.card-text h3{
+    margin-top:0;
+
+    font-size:24px;
+}
+
+.card-text {
+    flex: 1;
+    text-align: left;
+}
+
+.button {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 0;
+
+    background: #d8bfa9;
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 24px;
+    border-radius: 999px;
+}
+
+/* ===== フッター ===== */
+
+footer{
+    text-align:center;
+
+    padding:40px;
+
+    background:#efe6dd;
+
+    margin-top:50px;
+}
+
+/* ===== スマホ対応 ===== */
+
+@media(max-width:768px){
+
+.hero{
+    height:auto;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.profile{
+    padding-top:40px;
+}
+
+.card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+}
+
+.speech::before{
+    display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== TOP ===== -->
+
+<section class="hero">
+
+    <div class="hero-box">
+
+        <h1>ベビーとにゃんこと暮らす生活 ベストバイ☆</h1>
+
+        <p>
+            〜良かったものをゆるっとご紹介☺️〜
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===== 自己紹介 ===== -->
+
+<section class="profile">
+
+    <img src="mama.png" alt="ママイラスト">
+
+    <div class="speech">
+
+        はじめまして ちゃるです☺️<br>
+        2025年12月に男の子を出産しました<br><br>
+        
+        保護猫の”ちゃちゃ”と息子の”はる”と暮らしながら<br>
+        「これは買って良かった！」と思ったものをご紹介しています✨<br><br>
+
+        同じママさんや猫好きさんの参考になれば嬉しいです♪
+
+    </div>
+
+</section>
+
+<!-- ===== ベビー用品 ===== -->
+
+<section class="section">
+
+    <h2 class="section-title">
+        ベビー用品
+    </h2>
+
+    <div class="card">
+
+        <a href="https://www.toyroyal.co.jp/products/baby/merry/6078.html" target="_blank">
+        <img src="bedmerry.jpg" alt="ポケメリー">
+        </a>
+
+        <div class="card-text">
+
+            <div class="rank">🥇 第1位</div>
+
+            <h3>モンポケ 7ステップメリージム</h3>
+
+            <p>
+                追視ができるようになってから大活躍！我が家ではベットメリーにして使ってました<br>
+                動かしておけば一人遊びはもちろん、そのまま寝てくれることも😍<br>
+                セルフねんねの練習になって、本当に買って助かった神アイテム✨
+            </p>
+
+            <a href="https://www.toyroyal.co.jp/products/baby/merry/6078.html" class="button" target="_blank">
+                詳しく見る
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <a href="https://www.zojirushi.co.jp/syohin/bottle_tumbler/bottle/smrs-sxjs/" target="_blank">
+        <img src="tambra.jpg" alt="タンブラー">
+        </a>
+
+        <div class="card-text">
+
+            <div class="rank">🥈 第2位</div>
+
+            <h3>象印 タンブラー</h3>
+
+            <p>
+                ベビー用品専用とかではなく普通のタンブラーです笑<br>
+                象印のタンブラーは沸かしたお湯を入れておけば8時間は70度以上をキープするので枕元に置いて夜間の調乳に大活躍<br>
+                母乳増やすためには白湯をたくさん飲むと良いらしく、自分用の飲料としても家の中で常に携帯してました<br>
+            </p>
+
+            <a href="https://www.zojirushi.co.jp/syohin/bottle_tumbler/bottle/smrs-sxjs/" class="button" target="_blank">
+                詳しく見る
+            </a>
+
+        </div>
+
+    
+
+    </div>
+
+    <div class="card">
+
+        <a href="https://shop.akachan.jp/shop/g/g240486100/" target="_blank">
+        <img src="steam.jpg" alt="スチームメイト">
+        </a>
+
+        <div class="card-text">
+
+            <div class="rank">🥉 第3位</div>
+
+            <h3>アカチャンホンポ スチームメイト</h3>
+
+            <p>
+                哺乳瓶の消毒はもちろん おしゃぶりやおもちゃも消毒できちゃう！<br>
+                スイッチひとつでOKだし、お手入れも簡単なので重宝しました✨<br>
+                今でも離乳食の食器を気になった時に除菌したりで使用してます
+
+            </p>
+
+            <a href="https://shop.akachan.jp/shop/g/g240486100/" class="button" target="_blank">
+                詳しく見る
+
+            </a>
+
+        </div>
+
+    
+
+    </div>
+
+</section>
+
+<!-- ===== 猫用品 ===== -->
+
+<section class="section">
+
+    <h2 class="section-title">
+        猫用品
+    </h2>
+
+    <div class="card">
+
+        <a href="https://www.amazon.co.jp/dp/B0FWJ6XSVW" target="_blank">
+        <img src="catoilet_.jpg" alt="猫トイレ">
+        </a>
+
+        <div class="card-text">
+
+            <div class="rank">🥇 第1位</div>
+
+            <h3>OROLEY 自動猫トイレ</h3>
+
+            <p>
+                毎回のトイレ掃除は不要！！<br>
+                3〜4日に1度、ゴミ袋を交換すればOK<br>
+                消臭機能もあるから本当に楽！これが無い生活には戻れません
+            </p>
+
+            <a href="https://www.amazon.co.jp/dp/B0FWJ6XSVW" class="button" target="_blank">
+                詳しく見る
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <a href="https://petelect.jp/products/uespv2cp" target="_blank">
+        <img src="karikari.jpg" alt="猫トイレ">
+        </a>
+
+        <div class="card-text">
+
+            <div class="rank">🥈 第2位</div>
+
+            <h3>うちのこエレクトリック カリカリマシーン（自動給餌機）</h3>
+
+            <p>
+                時間指定で自動でご飯あげるのはもちろん、遠隔からも給餌可能！<br>
+                何よりカメラ機能がついてるのが大正解<br>
+                別にペットカメラを置かなくても外出中の我が子の様子も見れちゃいます😍
+            </p>
+
+            <a href="https://petelect.jp/products/uespv2cp" class="button" target="_blank">
+                詳しく見る
+            </a>
+
+        </div>
+
+        </div>
+
+        <div class="card">
+
+        <a href="https://www.amazon.co.jp/PETEPELA-%E3%82%AD%E3%83%A3%E3%83%83%E3%83%88%E3%82%BF%E3%83%AF%E3%83%BC-%E7%9C%81%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9-%E5%AE%87%E5%AE%99%E8%88%B9%E3%83%8F%E3%83%B3%E3%83%A2%E3%83%83%E3%82%AF-%E9%81%8B%E5%8B%95%E4%B8%8D%E8%B6%B3%E8%A7%A3%E6%B6%88/dp/B09C5YN1MR/ref=sr_1_46?th=1" target="_blank">
+        <img src="tower.jpg" alt="キャットタワー">
+        </a>
+
+        <div class="card-text">
+
+            <div class="rank">🥉 第3位</div>
+
+            <h3>PETEPELA(ぺテぺラ) キャットタワー</h3>
+
+            <p>
+                やっぱタワーっていいよね♪<br>
+                ハンモックもクリアボールもついてる超多機能タワー<br>
+                突っ張り棒なのでガッチリ固定できて安心安全！<br>
+                うちの子は上のハンモックがお気に入り
+            </p>
+
+            <a href="https://www.amazon.co.jp/PETEPELA-%E3%82%AD%E3%83%A3%E3%83%83%E3%83%88%E3%82%BF%E3%83%AF%E3%83%BC-%E7%9C%81%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9-%E5%AE%87%E5%AE%99%E8%88%B9%E3%83%8F%E3%83%B3%E3%83%A2%E3%83%83%E3%82%AF-%E9%81%8B%E5%8B%95%E4%B8%8D%E8%B6%B3%E8%A7%A3%E6%B6%88/dp/B09C5YN1MR/ref=sr_1_46?th=1" class="button" target="_blank">
+                詳しく見る
+            </a>
+
+        </div>
+
+        </div>
+
+</section>
+
+<!-- ===== 日用品 ===== -->
+
+<section class="section">
+
+    <h2 class="section-title">
+        日用品
+    </h2>
+
+    <div class="card">
+
+        <a href="https://recolte-jp.com/products/auto-cooking-pot/" target="_blank">
+        <img src="recolte.jpg" alt="レコルト">
+        </a>
+
+        <div class="card-text">
+
+            <div class="rank">🥇 第1位</div>
+
+            <h3>レコルト 全自動調理ポッド</h3>
+
+            <p>
+                SNSで話題になってて便乗して購入😆<br>
+                コーン缶と牛乳だけでハイグレードなスープができて美味しいし栄養満点で最高！<br>
+                離乳食にも使えるので子育てママにはいいとこ取り♪ もはや最近は離乳食でしか使ってない笑
+            </p>
+
+            <a href="https://recolte-jp.com/products/auto-cooking-pot/" class="button" target="_blank">
+                詳しく見る
+            </a>
+
+        </div>
+
+    </div>
+
+     <div class="card">
+
+        <a href="https://panasonic.jp/wash/feature/drum.html" target="_blank">
+        <img src="rand.jpg" alt="洗濯機">
+        </a>
+
+        <div class="card-text">
+
+            <div class="rank">🥈 第2位</div>
+
+            <h3>Panasonic ドラム式洗濯乾燥機</h3>
+
+            <p>
+                乾燥までボタンひとつでできるって素晴らしい✨<br>
+                これがない生活には戻れない（２回目）<br>
+                おかげで乾燥に耐えられる服しか買わなくなりました笑
+            </p>
+
+            <a href="https://panasonic.jp/wash/feature/drum.html" class="button" target="_blank">
+                詳しく見る
+            </a>
+
+        </div>
+
+        </div>
+
+        <div class="card">
+
+        <a href="https://uv100.jp/category/1_1/05401.html" target="_blank">
+        <img src="ambrela.jpg" alt="日傘">
+        </a>
+
+        <div class="card-text">
+
+            <div class="rank">🥉 第3位</div>
+
+            <h3>サンバリア 日傘</h3>
+
+            <p>
+                紫外線対策しないと暑いしシミが気になる！これがあれば体感温度がかなり涼しい<br>
+                難点はベビーカー押しながらだと、私の筋力では難しいこと・・・<br>
+                なので抱っこ紐の時だけ愛用してます🎵 アームカバーも検討中
+            </p>
+
+            <a href="https://uv100.jp/category/1_1/05401.html" class="button" target="_blank">
+                詳しく見る
+            </a>
+
+        </div>
+
+        </div>
+
+</section>
+
+<footer>
+
+    © 2026 ベストバイ紹介☆
+
+</footer>
+
+</body>
+</html>
